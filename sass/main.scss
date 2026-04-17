@@ -1,0 +1,4 @@
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+@use 'abstracts/variables.scss'; 
+@use 'abstracts/mixins.scss';
+@use 'base/reset.scss';
