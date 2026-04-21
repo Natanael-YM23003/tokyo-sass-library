@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+
+  &--primary { background: $primary; }
+  &--success { background: $success; }
+  &--danger { background: $danger; }
+  &--warning { background: $warning; }
+}

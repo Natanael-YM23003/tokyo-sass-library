@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as *;
+.alert {
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+
+  &--success { background: $success; }
+  &--danger { background: $danger; }
+  &--warning { background: $warning; }
+  &--info { background: $info; }
+}

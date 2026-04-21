@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: $secondary;
+  padding: 10px;
+
+  &__logo {
+    font-weight: bold;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 10px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

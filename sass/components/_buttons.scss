@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &--primary { background: $primary; }
+  &--secondary { background: $secondary; }
+  &--success { background: $success; }
+  &--danger { background: $danger; }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+}

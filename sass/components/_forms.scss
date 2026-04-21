@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as *;
+.input {
+  padding: 10px;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+
+  &--valid {
+    border-color: $success;
+  }
+
+  &--invalid {
+    border-color: $danger;
+  }
+}

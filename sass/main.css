@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+/* Color primario */
+/* Color secundario */
+/* Color de éxito */
+/* Color de peligro */
+/* Color de advertencia */
+/* Color de información */
+/* Color de fondo principal */
+/* Color de texto principal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn--primary {
+  background: #8c3c39;
+}
+.btn--secondary {
+  background: #4e0a82;
+}
+.btn--success {
+  background: #1f8a70;
+}
+.btn--danger {
+  background: #6b0f1a;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.card {
+  background: #1a1a1a;
+  color: #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card__img img {
+  width: 100%;
+}
+.card__header {
+  padding: 10px;
+  font-weight: bold;
+  background: #8c3c39;
+}
+.card__body {
+  padding: 10px;
+}
+.card__footer {
+  padding: 10px;
+  background: #111;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.alert {
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+}
+.alert--success {
+  background: #1f8a70;
+}
+.alert--danger {
+  background: #6b0f1a;
+}
+.alert--warning {
+  background: #b8860b;
+}
+.alert--info {
+  background: #00adef;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.input {
+  padding: 10px;
+  border: 1px solid #333;
+  background: #111;
+  color: white;
+}
+.input--valid {
+  border-color: #1f8a70;
+}
+.input--invalid {
+  border-color: #6b0f1a;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #4e0a82;
+  padding: 10px;
+}
+.navbar__logo {
+  font-weight: bold;
+}
+.navbar__menu {
+  display: flex;
+  gap: 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.badge--primary {
+  background: #8c3c39;
+}
+.badge--success {
+  background: #1f8a70;
+}
+.badge--danger {
+  background: #6b0f1a;
+}
+.badge--warning {
+  background: #b8860b;
+}
+
+/* Importar los archivos parciales quedando todo dentro de un namespace */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+.table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}/*# sourceMappingURL=main.css.map */
