@@ -1,7 +1,10 @@
+@use '../abstracts/variables' as *;
+
 /* Filas */
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -10px;
 }
 
 @for $i from 1 through 12 {
@@ -9,4 +12,15 @@
     width: (100% / 12) * $i;
     padding: 10px;
   }
+}
+
+/* Generar columnnas responsivas */
+@each $name, $size in $breakpoints {
+    @media (min-width: $size) {
+        @for $i from 1 through 12 {
+            .col-#{$name}-#{$i} {
+                width: (100%/12) * $i;
+            }
+        }
+    }
 }

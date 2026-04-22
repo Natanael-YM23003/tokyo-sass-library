@@ -7,3 +7,9 @@ $info: #00adef; /* Color de información */
 
 $bg-main: #0d0d0d; /* Color de fondo principal */
 $text-main: #eaeaea; /* Color de texto principal */
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+);
