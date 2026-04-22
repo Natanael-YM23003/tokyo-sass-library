@@ -1,28 +1,66 @@
 @use '../abstracts/variables' as *;
 
 .btn {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
+  display: inline-block;
 
-  &--primary { background: $primary; }
-  &--secondary { background: $secondary; }
-  &--success { background: $success; }
-  &--danger { background: $danger; }
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease,
+    opacity 0.3s ease;
+
+  text-align: center;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    transform: translateY(-2px);
   }
 
   &:active {
-    transform: scale(0.95);
+    transform: scale(0.96);
   }
 
   &:disabled {
-    background: gray;
+    background: #555;
     cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &--primary {
+    background: $primary;
+  }
+
+  &--secondary {
+    background: $secondary;
+  }
+
+  &--success {
+    background: $success;
+  }
+
+  &--danger {
+    background: $danger;
+  }
+
+
+  &--sm {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  &--lg {
+    padding: 14px 24px;
+    font-size: 16px;
   }
 }

@@ -1,26 +1,59 @@
 @use '../abstracts/variables' as *;
+
 .card {
   background: #1a1a1a;
+
   color: $text-main;
-  border-radius: 8px;
+
+  border-radius: 12px;
+
   overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  max-width: 320px;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
 
   &__img img {
     width: 100%;
+    display: block;
+    object-fit: cover;
   }
 
+
   &__header {
-    padding: 10px;
+    padding: 14px 18px;
+
     font-weight: bold;
+
+    font-size: 18px;
+
     background: $primary;
   }
 
+
   &__body {
-    padding: 10px;
+    padding: 18px;
+
+    line-height: 1.6;
   }
 
+
   &__footer {
-    padding: 10px;
+    padding: 14px 18px;
+
     background: #111;
+
+    display: flex;
+    justify-content: flex-end;
   }
 }

@@ -1,11 +1,39 @@
 @use '../abstracts/variables' as *;
-.badge {
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 12px;
 
-  &--primary { background: $primary; }
-  &--success { background: $success; }
-  &--danger { background: $danger; }
-  &--warning { background: $warning; }
+.badge {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: white;
+
+  text-align: center;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &--primary {
+    background: $primary;
+  }
+
+  &--success {
+    background: $success;
+  }
+
+  &--danger {
+    background: $danger;
+  }
+
+  &--warning {
+    background: $warning;
+    color: black;
+  }
 }

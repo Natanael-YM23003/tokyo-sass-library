@@ -1,21 +1,46 @@
 @use '../abstracts/variables' as *;
+
 .navbar {
   display: flex;
+
   justify-content: space-between;
+
+  align-items: center;
+
+  padding: 16px 24px;
+
   background: $secondary;
-  padding: 10px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
 
   &__logo {
+    font-size: 22px;
+
     font-weight: bold;
+
+    color: white;
   }
 
   &__menu {
     display: flex;
-    gap: 10px;
+
+    gap: 20px;
   }
 
   a {
     color: white;
+
     text-decoration: none;
+
+    font-weight: 500;
+
+    transition:
+      color 0.3s ease,
+      opacity 0.3s ease;
+
+    &:hover {
+      color: $info;
+    }
   }
 }
