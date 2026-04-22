@@ -1,14 +1,44 @@
 @use '../abstracts/variables' as *;
+
 .table {
   width: 100%;
+
   border-collapse: collapse;
 
-  th, td {
-    border: 1px solid #333;
-    padding: 10px;
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  background: #161616;
+
+  color: $text-main;
+
+  th {
+    background: $primary;
+
+    color: white;
+
+    text-align: left;
+
+    padding: 14px;
+
+    font-weight: 600;
   }
 
-  tr:hover {
-    background: rgba(255,255,255,0.05);
+
+  td {
+    padding: 14px;
+
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba(255,255,255,0.02);
+  }
+
+  tbody tr:hover {
+    background: rgba(255,255,255,0.06);
+
+    transition: background 0.3s ease;
   }
 }

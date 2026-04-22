@@ -1,9 +1,40 @@
 @use '../abstracts/variables' as *;
+
 .input {
-  padding: 10px;
+  width: 100%;
+
+  padding: 12px 14px;
+
   border: 1px solid #333;
+
+  border-radius: 8px;
+
   background: #111;
-  color: white;
+
+  color: $text-main;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+
+  &::placeholder {
+    color: #777;
+  }
+
+  &:hover {
+    border-color: #555;
+  }
+
+  &:focus {
+    border-color: $info;
+
+    box-shadow: 0 0 0 3px rgba(0, 173, 239, 0.2);
+  }
 
   &--valid {
     border-color: $success;
