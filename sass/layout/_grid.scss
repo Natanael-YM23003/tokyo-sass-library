@@ -4,14 +4,26 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin: 0 calc(-#{$gutter} / 2);
 }
 
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: (100% / 12) * $i;
-    padding: 10px;
+    padding: 0 calc(#{$gutter} / 2);
   }
+}
+
+/* Mover columnas */
+@for $i from 1 through 11 {
+  .offset-#{$i} {
+    margin-left: (100% / 12) * $i;
+  }
+}
+
+/* Box sizing para evitar problemas de tamaño  */
+[class^="col-"] {
+  box-sizing: border-box;
 }
 
 /* Generar columnnas responsivas */
@@ -23,4 +35,32 @@
             }
         }
     }
+}
+
+/* Justify content */
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+
+/* Align items */
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
 }
