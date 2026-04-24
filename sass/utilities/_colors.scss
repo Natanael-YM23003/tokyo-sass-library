@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+$colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  danger: $danger,
+  warning: $warning,
+  info: $info
+);
+
+@each $name, $color in $colors {
+
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+}
