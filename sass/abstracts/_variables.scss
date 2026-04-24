@@ -1,12 +1,26 @@
-$primary: #8c3c39; /* Color primario */
-$secondary: #4e0a82; /* Color secundario */
-$success: #1f8a70; /* Color de éxito */
-$danger: #6b0f1a; /* Color de peligro */
-$warning: #b8860b; /* Color de advertencia */
-$info: #00adef; /* Color de información */
+/*TOKYO NIGHT*/
 
-$bg-main: #0d0d0d; /* Color de fondo principal */
-$text-main: #eaeaea; /* Color de texto principal */
+// Colores principales
+$primary: #7aa2f7;    
+$secondary: #1a1b26;  
+
+// Colores de estado
+$success: #9ece6a;   
+$danger: #f7768e;    
+$warning: #e0af68;    
+$info: #7dcfff;       
+
+// Colores de fondo y texto
+$bg-main: #1a1b26;
+$text-main: #c0caf5;
+
+// Bordes
+$border-color: #2f334d;
+
+// Sombras
+$shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+$shadow: 0 4px 12px rgba(0,0,0,0.5);
+$shadow-lg: 0 10px 25px rgba(0,0,0,0.7);
 
 $breakpoints: (
   sm: 576px,
