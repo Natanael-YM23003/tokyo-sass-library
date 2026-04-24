@@ -1,0 +1,29 @@
+/* Mixin para media queries */
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+    @if $breakpoint == md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint == lg {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+}
+
+/* Mixin para generar clases de espaciado */
+@mixin spacing($property, $prefix) {
+    @for $i from 1 through 7 {
+        .#{$prefix}-#{$i} {
+            #{$property}: $i * 5px;
+        }
+    }
+}
+

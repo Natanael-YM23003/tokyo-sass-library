@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 /* Filas */
 .row {
@@ -27,12 +28,26 @@
 }
 
 /* Generar columnnas responsivas */
-@each $name, $size in $breakpoints {
-    @media (min-width: $size) {
-        @for $i from 1 through 12 {
-            .col-#{$name}-#{$i} {
-                width: (100%/12) * $i;
-            }
-        }
+@include respond(sm) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: (100% / 12) * $i;
     }
+  }
+}
+
+@include respond(md) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: (100% / 12) * $i;
+    }
+  }
+}
+
+@include respond(lg) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: (100% / 12) * $i;
+    }
+  }
 }
