@@ -6,7 +6,8 @@ $colors: (
   success: $success,
   danger: $danger,
   warning: $warning,
-  info: $info
+  info: $info,
+  main: $bg-main
 );
 
 @each $name, $color in $colors {
