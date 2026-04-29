@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokyo Night - Utilidades</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="bg-main text-main">
+    <nav class="navbar">
+      <div class="navbar__logo pl-4">
+        Tokyo<span class="text-primary ml-1">Grid</span>
+      </div>
+      <div class="navbar__menu pr-4">
+        <a href="index.html">Inicio</a>
+        <a href="grid.html">Grid</a>
+        <a href="utilities.html" class="text-info">Utilidades</a>
+        <a href="installation.html">Instalación</a>
+      </div>
+    </nav>
+
+    <main class="container mt-7">
+      <header class="mb-7">
+        <h1 class="fs-1 text-primary fw-bold">Utilidades</h1>
+        <p class="fs-4 mt-2 text-info">
+          Clases auxiliares para controlar el diseño de forma rápida y
+          eficiente.
+        </p>
+      </header>
+
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">
+          Padding (Espaciado Interno)
+        </h2>
+        <p class="mb-4 text-info">
+          Controla el espacio interno de los elementos con la escala
+          <b class="text-primary">.p-*</b> (del 1 al 7).
+        </p>
+
+        <div class="bg-secondary p-5 rounded border mb-4 shadow">
+          <div class="d-flex justify-center gap-3">
+            <div class="bg-main border p-1 text-primary fw-bold">.p-1</div>
+            <div class="bg-main border p-3 text-primary fw-bold">.p-3</div>
+            <div class="bg-main border p-5 text-primary fw-bold">.p-5</div>
+          </div>
+        </div>
+
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow"
+        ><code>&lt;!-- Ejemplo de padding general --&gt;
+&lt;div class="p-5"&gt;Contenido con mucho espacio interno&lt;/div&gt;</code></pre>
+      </section>
+
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-3 border-bottom">
+          Márgenes (Espaciado Externo)
+        </h2>
+        <p class="mb-4 text-info">
+          Las clases <b class="text-primary">.mt-*</b>,
+          <b class="text-primary">.mb-*</b>, etc., separan los elementos entre
+          sí.
+        </p>
+
+        <div class="bg-secondary p-5 rounded border mb-4 shadow">
+          <p class="text-primary small mb-3 italic">
+            // Las líneas punteadas indican el borde del contenedor padre
+          </p>
+
+          <div
+            class="border bg-main mb-4"
+            style="border-style: dashed !important"
+          >
+            <div class="bg-primary text-secondary p-2 mt-1 text-center fw-bold">
+              .mt-1
+            </div>
+          </div>
+
+          <div
+            class="border bg-main mb-4"
+            style="border-style: dashed !important"
+          >
+            <div class="bg-primary text-secondary p-2 mt-4 text-center fw-bold">
+              .mt-4
+            </div>
+          </div>
+
+          <div class="border bg-main" style="border-style: dashed !important">
+            <div class="bg-primary text-secondary p-2 mt-7 text-center fw-bold">
+              .mt-7
+            </div>
+          </div>
+        </div>
+
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow"
+        ><code>&lt;!-- Margen superior de nivel 4 --&gt;
+&lt;div class="mt-4"&gt;...&lt;/div&gt;</code></pre>
+      </section>
+
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-3 border-bottom">Flexbox</h2>
+        <p class="mb-4 text-info">
+          Controla la alineación con <b class="text-primary">.d-flex</b>,
+          <b class="text-primary">.justify-*</b> y
+          <b class="text-primary">.align-*</b>.
+        </p>
+
+        <div class="bg-secondary p-5 rounded border mb-4 shadow">
+          <div class="d-flex justify-between border bg-main p-3 rounded">
+            <div class="badge badge--primary">Elemento 1</div>
+            <div class="badge badge--primary">Elemento 2</div>
+            <div class="badge badge--primary">Elemento 3</div>
+          </div>
+          <p class="text-center mt-3 text-info fs-6 small">
+            Ejemplo visual de la clase
+            <b class="text-primary">.justify-between</b>
+          </p>
+        </div>
+
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow"
+        ><code>&lt;div class="d-flex justify-center align-center"&gt;
+    &lt;div&gt;Contenido Centrado&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="fs-2 text-primary pb-2 mb-3 border-bottom">
+          Bordes y Sombras
+        </h2>
+        <p class="mb-4 text-info">
+          Aplica <b class="text-primary">.rounded</b> para bordes y
+          <b class="text-primary">.shadow-*</b> para elevación.
+        </p>
+
+        <div class="row">
+          <div class="col-4">
+            <div
+              class="bg-secondary p-4 text-center rounded border shadow-sm text-info fw-bold"
+            >
+              <small class="d-block mb-2 text-primary">Sutil</small>
+              .shadow-sm
+            </div>
+          </div>
+          <div class="col-4">
+            <div
+              class="bg-secondary p-4 text-center rounded border shadow text-info fw-bold"
+            >
+              <small class="d-block mb-2 text-primary">Estándar</small>
+              .shadow
+            </div>
+          </div>
+          <div class="col-4">
+            <div
+              class="bg-secondary p-4 text-center rounded border shadow-lg text-info fw-bold"
+            >
+              <small class="d-block mb-2 text-primary">Elevado</small>
+              .shadow-lg
+            </div>
+          </div>
+        </div>
+
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow mt-4"
+        ><code>&lt;!-- Elemento con sombra grande y bordes redondeados --&gt;
+&lt;div class="rounded shadow-lg"&gt;...&lt;/div&gt;</code></pre>
+      </section>
+    </main>
+
+    <footer class="bg-secondary text-center p-6 mt-7 border-0">
+      <p class="text-info fw-bold">
+        Tokyo Night Framework &copy; 2026 - Laboratorio II
+      </p>
+    </footer>
+  </body>
+</html>

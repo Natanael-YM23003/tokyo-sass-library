@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Night Framework - Inicio</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  
+<body class="bg-main text-main">
+
+    <nav class="navbar">
+        <div class="navbar__logo pl-4">Tokyo<span class="text-primary ml-1">Grid</span></div>
+        <div class="navbar__menu pr-4"> 
+            <a href="index.html" class="text-info">Inicio</a>
+            <a href="grid.html">Grid</a>
+            <a href="utilities.html">Utilidades</a>
+            <a href="installation.html">Instalación</a>
+        </div>
+    </nav>
+
+    <header class="container mt-7 mb-7 py-7">
+        <div class="row justify-center">
+            <div class="col-8 text-center">
+                <h1 class="fs-1 text-primary fw-bold mb-4">Framework con Estilo <span class="text-success">Neon</span></h1>
+                <p class="fs-3 text-info mb-7">Un framework moderno, ligero y basado en la paleta visual de la ciudad de tokyo nocturna.</p>
+                
+                <div class="d-flex justify-center gap-4 mt-7">
+    <a href="installation.html" class="badge badge--primary p-3 fs-5">Empezar Ahora</a>
+    <a href="grid.html" class="badge badge--secondary p-3 fs-5 border">Explorar Grid</a>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-7">
+        <hr class="border-bottom opacity-20">
+    </div>
+
+    <section class="container mt-7 pt-7 mb-7 pb-7">
+        <h2 class="text-center text-primary fs-2 mb-7">¿Por qué TokyoGrid?</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="bg-secondary p-6 rounded border shadow-lg text-center h-100 ">
+                    <div class="text-success fs-1 mb-4">#</div>
+                    <h3 class="text-primary fs-3 mb-3">Grid Flexible</h3>
+                    <p class="text-info">Sistema de 12 columnas totalmente adaptable y fácil de implementar.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="bg-secondary p-6 rounded border shadow-lg text-center h-100">
+                    <div class="text-success fs-1 mb-4">{}</div>
+                    <h3 class="text-primary fs-3 mb-3">Utilidades</h3>
+                    <p class="text-info">Clases de espaciado, flexbox y tipografía listas para producción.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="bg-secondary p-6 rounded border shadow-lg text-center h-100">
+                    <div class="text-success fs-1 mb-4">★</div>
+                    <h3 class="text-primary fs-3 mb-3">Estética Pro</h3>
+                    <p class="text-info">Inspirado en Tokyo Night para ofrecer una experiencia visual única.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-7 pb-7">
+        <div class="bg-secondary p-7 rounded border shadow-sm border-left-primary">
+            <div class="row align-center">
+                <div class="col-6">
+                    <h2 class="text-success mb-3 fs-2">Instalación Instantánea</h2>
+                    <p class="text-info fs-5">Solo enlaza el CSS y comienza a crear interfaces neon hoy mismo.</p>
+                </div>
+                <div class="col-6">
+                    <pre class="bg-main p-4 rounded border text-primary shadow-lg m-0"><code>&lt;link rel="stylesheet" href="../css/style.css"&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-center p-7 mt-7 border-0">
+        <div class="container">
+            <p class="text-info fw-bold">Tokyo Night Framework &copy; 2026</p>
+            <p class="text-main fs-6 mt-2 italic">Proyecto Final - Laboratorio II</p>
+        </div>
+    </footer>
+
 </body>
 </html>
