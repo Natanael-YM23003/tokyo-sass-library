@@ -7,6 +7,7 @@
 @include spacing(margin-right, mr);
 
 /* Padding */
+@include spacing(padding, p);
 @include spacing(padding-top, pt);
 @include spacing(padding-bottom, pb);
 @include spacing(padding-left, pl);
