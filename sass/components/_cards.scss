@@ -15,7 +15,13 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
 
-  max-width: 320px;
+    //Asegurar que las tarjetas no se desborden
+  width: 100%;
+  max-width: 100%;
+
+  // Evitar que el texto dentro de las tarjetas se desborde
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 
   &:hover {
     transform: translateY(-5px);

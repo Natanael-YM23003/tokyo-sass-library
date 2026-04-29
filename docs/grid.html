@@ -16,6 +16,7 @@
         <a href="grid.html" class="text-info">Grid</a>
         <a href="utilities.html">Utilidades</a>
         <a href="installation.html">Instalación</a>
+        <a href="components.html">Componentes</a>
       </div>
     </nav>
 
@@ -100,6 +101,44 @@
         ><code>&lt;div class="row"&gt;
   &lt;div class="col-6"&gt;Mitad&lt;/div&gt;
   &lt;div class="col-6"&gt;Mitad&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-3 border-bottom">
+          Grid Responsivo (Breakpoints)
+        </h2>
+        <p class="mb-4 text-info">
+          Usa los prefijos <b class="text-primary">sm-</b>, <b class="text-primary">md-</b> y <b class="text-primary">lg-</b> 
+          para controlar el ancho en diferentes pantallas. Por defecto, las columnas ocupan el 100%.
+        </p>
+
+        <div class="border p-4 rounded mb-3 bg-secondary shadow">
+          <p class="text-primary fw-bold mb-3">Prueba a redimensionar el navegador:</p>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+              <div class="bg-primary text-secondary p-3 text-center rounded fw-bold">
+                100% móvil / 33% PC
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+              <div class="bg-primary text-secondary p-3 text-center rounded fw-bold">
+                100% móvil / 33% PC
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-2">
+              <div class="bg-primary text-secondary p-3 text-center rounded fw-bold">
+                100% móvil / 33% PC
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <pre class="bg-secondary p-4 rounded border text-success shadow"><code>&lt;!-- Una columna abajo de otra en móvil, una al lado de otra en PC --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-12 col-lg-4"&gt; Columna 1 &lt;/div&gt;
+  &lt;div class="col-12 col-lg-4"&gt; Columna 2 &lt;/div&gt;
+  &lt;div class="col-12 col-lg-4"&gt; Columna 3 &lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </section>
 

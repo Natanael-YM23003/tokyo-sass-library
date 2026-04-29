@@ -7,11 +7,18 @@
 
   align-items: center;
 
+  flex-wrap: wrap;
+
   padding: 16px 24px;
 
   background: $secondary;
 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+    padding: 1rem;
+  }
 
 
   &__logo {
@@ -20,12 +27,30 @@
     font-weight: bold;
 
     color: white;
+
+    //Evitar que el logo se vea muy grande en pantallas pequeñas
+    @media (max-width: 400px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
 
   &__menu {
     display: flex;
 
     gap: 20px;
+    
+
+    //En pantallas pequeñas, el menú se acomoda verticalmente
+   @media (max-width: 600px) {
+     width: 100%;
+      margin-top: 8px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // 2 columnas iguales
+      gap: 12px;
+      justify-content: center;
+    }
   }
 
   a {
@@ -39,6 +64,13 @@
       color 0.3s ease,
       opacity 0.3s ease;
 
+    @media (max-width: 600px) {
+        text-align: center;
+
+        &:last-child:nth-child(odd) {
+          grid-column: span 2;
+        }
+    }
     &:hover {
       color: $info;
     }
