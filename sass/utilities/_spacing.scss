@@ -1,12 +1,12 @@
 @use "../abstracts/mixins" as *;
 
-/* Margin */
+
 @include spacing(margin-top, mt);
 @include spacing(margin-bottom, mb);
 @include spacing(margin-left, ml);
 @include spacing(margin-right, mr);
 
-/* Padding */
+
 @include spacing(padding, p);
 @include spacing(padding-top, pt);
 @include spacing(padding-bottom, pb);

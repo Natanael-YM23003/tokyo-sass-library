@@ -27,7 +27,6 @@
 
     color: white;
 
-    //Evitar que el logo se vea muy grande en pantallas pequeñas
     @media (max-width: 400px) {
       width: 100%;
       text-align: center;
@@ -40,12 +39,12 @@
 
     gap: 20px;
 
-    //En pantallas pequeñas, el menú se acomoda verticalmente
+
     @media (max-width: 600px) {
       width: 100%;
       margin-top: 8px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr); // 2 columnas iguales
+      grid-template-columns: repeat(2, 1fr); 
       gap: 12px;
       justify-content: center;
     }

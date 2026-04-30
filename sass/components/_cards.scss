@@ -15,11 +15,9 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
 
-  //Asegurar que las tarjetas no se desborden
   width: 100%;
   max-width: 100%;
 
-  // Evitar que el texto dentro de las tarjetas se desborde
   word-wrap: break-word;
   overflow-wrap: break-word;
 

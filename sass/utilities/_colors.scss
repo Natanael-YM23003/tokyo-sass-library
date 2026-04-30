@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
 
-// Mapa para colores de fondo
+
 $bg-colors: (
   primary: $primary,
   secondary: $secondary,
@@ -9,7 +9,7 @@ $bg-colors: (
   danger: $danger,
 );
 
-// Mapa para colores de texto
+
 $text-colors: (
   primary: $primary,
   secondary: $secondary,
@@ -18,14 +18,14 @@ $text-colors: (
   danger: $danger,
 );
 
-// Generamos las clases de fondo
+
 @each $name, $color in $bg-colors {
   .bg-#{$name} {
     background-color: $color !important;
   }
 }
 
-// Generamos las clases de texto
+
 @each $name, $color in $text-colors {
   .text-#{$name} {
     color: $color !important;

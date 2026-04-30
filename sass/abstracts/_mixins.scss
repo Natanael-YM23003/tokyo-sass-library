@@ -18,7 +18,6 @@
   }
 }
 
-/* Mixin para generar clases de espaciado */
 @mixin spacing($property, $prefix) {
   @for $i from 1 through 10 {
     .#{$prefix}-#{$i} {
@@ -27,7 +26,6 @@
   }
 }
 
-/* Mixin para generar clases de gap */
 @mixin generate-gap($map) {
   @each $key, $value in $map {
     .gap-#{$key} {

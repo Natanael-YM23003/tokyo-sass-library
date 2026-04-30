@@ -8,10 +8,10 @@ $gaps: (
   5: 40px,
 );
 
-// Generar clases de gap
+
 @include generate-gap($gaps);
 
-/* Aplicar flex */
+
 .d-flex {
   display: flex;
 }
@@ -22,7 +22,7 @@ $gaps: (
   flex-wrap: wrap !important;
 }
 
-/* Justify content */
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -39,7 +39,6 @@ $gaps: (
   justify-content: space-around;
 }
 
-/* Align items */
 .align-start {
   align-items: flex-start;
 }

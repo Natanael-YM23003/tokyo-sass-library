@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-/* Filas */
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -15,20 +15,19 @@
   }
 }
 
-/* Mover columnas */
+
 @for $i from 1 through 11 {
   .offset-#{$i} {
     margin-left: (100% / 12) * $i;
   }
 }
 
-/* Box sizing para evitar problemas de tamaño  */
+
 [class^="col-"] {
   box-sizing: border-box;
   min-width: 0;
 }
 
-/* Generar columnnas responsivas */
 @include respond(sm) {
   @for $i from 1 through 12 {
     .col-sm-#{$i} {
