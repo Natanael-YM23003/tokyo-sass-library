@@ -31,3 +31,20 @@ $text-colors: (
     color: $color !important;
   }
 }
+
+
+.bg-main {
+  background: $light-bg-main;
+}
+
+.text-main {
+  color: $light-text-main;
+}
+
+body.dark .bg-main {
+  background: $bg-main;
+}
+
+body.dark .text-main {
+  color: $text-main;
+}
