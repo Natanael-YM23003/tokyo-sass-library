@@ -1,24 +1,23 @@
 /* Importar los archivos parciales quedando todo dentro de un namespace */
-@use 'abstracts/variables.scss'; 
-@use 'abstracts/mixins.scss';
-@use 'base/reset.scss';
+@use "abstracts/variables.scss";
+@use "abstracts/mixins.scss";
+@use "base/reset.scss";
 
-@use 'components/buttons';
-@use 'components/cards';
-@use 'components/alerts';
-@use 'components/forms';
-@use 'components/navbar';
-@use 'components/badges';
-@use 'components/tables';
+@use "components/buttons";
+@use "components/cards";
+@use "components/alerts";
+@use "components/forms";
+@use "components/navbar";
+@use "components/badges";
+@use "components/tables";
 
-@use 'layout/container';
-@use 'layout/grid';
+@use "layout/container";
+@use "layout/grid";
 
-@use 'utilities';
-@use 'base/typography';
-@use 'utilities/flex';
-@use 'utilities/display';
-@use 'utilities/spacing';
-@use 'utilities/index';
-@use 'utilities/colors';
-
+@use "utilities";
+@use "base/typography";
+@use "utilities/flex";
+@use "utilities/display";
+@use "utilities/spacing";
+@use "utilities/index";
+@use "utilities/colors";

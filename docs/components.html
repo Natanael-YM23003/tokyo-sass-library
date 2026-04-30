@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokyo Night - Componentes</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="bg-main text-main">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="bg-main text-main">
     <nav class="navbar">
       <div class="navbar__logo pl-4">
         Tokyo<span class="text-primary ml-1">Grid</span>
@@ -21,129 +21,170 @@
     </nav>
 
     <main class="container mt-7">
-        <header class="mb-7">
-            <h1 class="fs-1 text-primary fw-bold">Librería de Componentes</h1>
-            <p class="fs-4 mt-2 text-info">Bloques de construcción con estética Neon y comportamiento responsivo.</p>
-        </header>
+      <header class="mb-7">
+        <h1 class="fs-1 text-primary fw-bold">Librería de Componentes</h1>
+        <p class="fs-4 mt-2 text-info">
+          Bloques de construcción con estética Neon y comportamiento responsivo.
+        </p>
+      </header>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">Botones (.btn)</h2>
-            <div class="bg-secondary p-5 rounded border mb-4 shadow">
-                <div class="d-flex gap-3 flex-wrap justify-center">
-                    <button class="btn btn--primary">Principal</button>
-                    <button class="btn btn--success">Éxito</button>
-                    <button class="btn btn--danger">Peligro</button>
-                    <button class="btn btn--primary btn--sm">Pequeño</button>
-                    <button class="btn btn--primary btn--lg">Grande</button>
-                </div>
-            </div>
-            <pre class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"><code>&lt;button class="btn btn--primary"&gt;Principal&lt;/button&gt;
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">
+          Botones (.btn)
+        </h2>
+        <div class="bg-secondary p-5 rounded border mb-4 shadow">
+          <div class="d-flex gap-3 flex-wrap justify-center">
+            <button class="btn btn--primary">Principal</button>
+            <button class="btn btn--success">Éxito</button>
+            <button class="btn btn--danger">Peligro</button>
+            <button class="btn btn--primary btn--sm">Pequeño</button>
+            <button class="btn btn--primary btn--lg">Grande</button>
+          </div>
+        </div>
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"
+        ><code>&lt;button class="btn btn--primary"&gt;Principal&lt;/button&gt;
 &lt;button class="btn btn--success"&gt;Éxito&lt;/button&gt;</code></pre>
-        </section>
+      </section>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">Alertas (.alert)</h2>
-            <div class="bg-main p-4 border rounded mb-4">
-                <div class="alert alert--info">Este es un mensaje de información.</div>
-                <div class="alert alert--success">¡Operación realizada con éxito!</div>
-                <div class="alert alert--danger">Ha ocurrido un error crítico.</div>
-            </div>
-            <pre class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"><code>&lt;div class="alert alert--success"&gt;...&lt;/div&gt;</code></pre>
-        </section>
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">
+          Alertas (.alert)
+        </h2>
+        <div class="bg-main p-4 border rounded mb-4">
+          <div class="alert alert--info">
+            Este es un mensaje de información.
+          </div>
+          <div class="alert alert--success">
+            ¡Operación realizada con éxito!
+          </div>
+          <div class="alert alert--danger">Ha ocurrido un error crítico.</div>
+        </div>
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"
+        ><code>&lt;div class="alert alert--success"&gt;...&lt;/div&gt;</code></pre>
+      </section>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">Tarjetas (.card)</h2>
-            <div class="row">
-                <div class="col-12 col-lg-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card__header text-secondary text-center fw-bold">Encabezado de Tarjeta</div>
-                        <div class="card__body p-5">
-                            <h3 class="text-primary mb-3 fs-3">Título Interno</h3>
-                            <p class="text-main mb-4">Cuerpo de la tarjeta con espaciado interno</p>
-                            <button class="btn btn--primary btn--sm">Acción</button>
-                        </div>
-                        <div class="card__footer">
-                            <span class="badge badge--primary">Etiqueta</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card__img">
-                            <img src="https://preview.redd.it/manga-colored-luffy-done-by-me-v0-aye4n06gyhqc1.jpg?width=640&crop=smart&auto=webp&s=9b282a5978fe5243f90673b90d4f3b645756d892" alt="Luffy">
-                        </div>
-                        <div class="card__body p-5">
-                            <p class="text-main">Tarjeta con imagen superior y ajuste de cobertura total.</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">
+          Tarjetas (.card)
+        </h2>
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card__header text-secondary text-center fw-bold">
+                Encabezado de Tarjeta
+              </div>
+              <div class="card__body p-5">
+                <h3 class="text-primary mb-3 fs-3">Título Interno</h3>
+                <p class="text-main mb-4">
+                  Cuerpo de la tarjeta con espaciado interno
+                </p>
+                <button class="btn btn--primary btn--sm">Acción</button>
+              </div>
+              <div class="card__footer">
+                <span class="badge badge--primary">Etiqueta</span>
+              </div>
             </div>
-            <pre class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"><code>&lt;div class="card"&gt;
+          </div>
+          <div class="col-12 col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card__img">
+                <img
+                  src="https://preview.redd.it/manga-colored-luffy-done-by-me-v0-aye4n06gyhqc1.jpg?width=640&crop=smart&auto=webp&s=9b282a5978fe5243f90673b90d4f3b645756d892"
+                  alt="Luffy"
+                />
+              </div>
+              <div class="card__body p-5">
+                <p class="text-main">
+                  Tarjeta con imagen superior y ajuste de cobertura total.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"
+        ><code>&lt;div class="card"&gt;
   &lt;div class="card__header"&gt;Título&lt;/div&gt;
   &lt;div class="card__body"&gt;Contenido&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </section>
+      </section>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">Etiquetas (.badge)</h2>
-            <div class="bg-secondary p-5 rounded border mb-4 shadow">
-                <div class="d-flex gap-3 flex-wrap justify-center">
-                    <span class="badge badge--primary">Principal</span>
-                    <span class="badge badge--success">Activo</span>
-                    <span class="badge badge--danger">Error</span>
-                    <span class="badge badge--warning">Pendiente</span>
-                    <span class="badge badge--info">Nuevo</span>
-                </div>
-            </div>
-            <pre class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"><code>&lt;span class="badge badge--primary"&gt;Etiqueta&lt;/span&gt;
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">
+          Etiquetas (.badge)
+        </h2>
+        <div class="bg-secondary p-5 rounded border mb-4 shadow">
+          <div class="d-flex gap-3 flex-wrap justify-center">
+            <span class="badge badge--primary">Principal</span>
+            <span class="badge badge--success">Activo</span>
+            <span class="badge badge--danger">Error</span>
+            <span class="badge badge--warning">Pendiente</span>
+            <span class="badge badge--info">Nuevo</span>
+          </div>
+        </div>
+        <pre
+          class="bg-secondary p-4 rounded border text-success shadow overflow-x-auto"
+        ><code>&lt;span class="badge badge--primary"&gt;Etiqueta&lt;/span&gt;
 &lt;span class="badge badge--success"&gt;Listo&lt;/span&gt;</code></pre>
-        </section>
+      </section>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">Formularios y Tablas</h2>
-            <div class="row">
-                <div class="col-12 col-lg-5 mb-4">
-                    <div class="bg-secondary p-5 rounded border h-100">
-                        <label class="d-block mb-2 text-info">Input Estándar</label>
-                        <input type="text" class="input mb-4" placeholder="Escribe aquí...">
-                        
-                        <label class="d-block mb-2 text-success">Input Válido</label>
-                        <input type="text" class="input input--valid" value="Dato correcto">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-7 mb-4">
-                    <div class="overflow-x-auto">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Componente</th>
-                                    <th>Estado</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>01</td>
-                                    <td>Navbar</td>
-                                    <td><span class="badge badge--success">Listo</span></td>
-                                </tr>
-                                <tr>
-                                    <td>02</td>
-                                    <td>Grid</td>
-                                    <td><span class="badge badge--success">Listo</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary pb-2 mb-4 border-bottom">
+          Formularios y Tablas
+        </h2>
+        <div class="row">
+          <div class="col-12 col-lg-5 mb-4">
+            <div class="bg-secondary p-5 rounded border h-100">
+              <label class="d-block mb-2 text-info">Input Estándar</label>
+              <input
+                type="text"
+                class="input mb-4"
+                placeholder="Escribe aquí..."
+              />
+
+              <label class="d-block mb-2 text-success">Input Válido</label>
+              <input
+                type="text"
+                class="input input--valid"
+                value="Dato correcto"
+              />
             </div>
-        </section>
+          </div>
+          <div class="col-12 col-lg-7 mb-4">
+            <div class="overflow-x-auto">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Componente</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Navbar</td>
+                    <td><span class="badge badge--success">Listo</span></td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>Grid</td>
+                    <td><span class="badge badge--success">Listo</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-   <footer class="bg-secondary text-center p-6 mt-7 border-0">
+    <footer class="bg-secondary text-center p-6 mt-7 border-0">
       <p class="text-info fw-bold">
         Tokyo Night Framework &copy; 2026 - Laboratorio II
       </p>
     </footer>
-</body>
+  </body>
 </html>

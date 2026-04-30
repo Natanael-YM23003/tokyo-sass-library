@@ -1,26 +1,26 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .d-none {
-    display: none;
+  display: none;
 }
 .d-block {
-    display: block;
+  display: block;
 }
 .d-inline {
-    display: inline;
+  display: inline;
 }
 
 /* Display responsivo */
 @each $name, $value in $breakpoints {
-    @media (min-width: $value) {
-        .d-#{$name}-none {
-            display: none;
-        }
-        .d-#{$name}-block {
-            display: block;
-        }
-        .d-#{$name}-flex {
-            display: flex;
-        }
+  @media (min-width: $value) {
+    .d-#{$name}-none {
+      display: none;
     }
+    .d-#{$name}-block {
+      display: block;
+    }
+    .d-#{$name}-flex {
+      display: flex;
+    }
+  }
 }

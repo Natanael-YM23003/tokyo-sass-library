@@ -1,14 +1,14 @@
 /*TOKYO NIGHT*/
 
 // Colores principales
-$primary: #7aa2f7;    
-$secondary: #1a1b26;  
+$primary: #7aa2f7;
+$secondary: #1a1b26;
 
 // Colores de estado
-$success: #9ece6a;   
-$danger: #f7768e;    
-$warning: #e0af68;    
-$info: #7dcfff;       
+$success: #9ece6a;
+$danger: #f7768e;
+$warning: #e0af68;
+$info: #7dcfff;
 
 // Colores de fondo y texto
 $bg-main: #1a1b26;
@@ -18,9 +18,9 @@ $text-main: #c0caf5;
 $border-color: #2f334d;
 
 // Sombras
-$shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-$shadow: 0 4px 10px rgba(0,0,0,0.2);
-$shadow-lg: 0 10px 20px rgba(0,0,0,0.4);
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+$shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.4);
 
 $breakpoints: (
   sm: 576px,
@@ -29,13 +29,3 @@ $breakpoints: (
 );
 
 $gutter: 20px; /* Espaciado */
-$spacings: (
-  0: 0,
-  1: 5px,
-  2: 10px,
-  3: 15px,
-  4: 20px,
-  5: 30px,
-  6: 40px,
-  7: 60px
-);

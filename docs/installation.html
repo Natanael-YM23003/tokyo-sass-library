@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instalación - Tokyo Night Framework</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body class="bg-main text-main">
-   <nav class="navbar">
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="bg-main text-main">
+    <nav class="navbar">
       <div class="navbar__logo pl-4">
         Tokyo<span class="text-primary ml-1">Grid</span>
       </div>
@@ -21,42 +21,81 @@
     </nav>
 
     <header class="bg-secondary py-7 border-bottom shadow">
-        <div class="container text-center">
-            <h1 class="fs-1 text-primary fw-bold mb-3">Instalación y Configuración</h1>
-            <p class="fs-4 text-info mx-auto mb-5">
-                Todo lo que necesitas para integrar Tokyo Night en tu flujo de trabajo y empezar a construir interfaces modernas.
-            </p>
-            <div class="d-flex justify-center gap-3 flex-wrap mb-4">
-                <a href="#cdn" class="badge badge--primary p-3 fs-5" style="text-decoration: none;">Vía CDN</a>
-                <a href="#local" class="badge badge--secondary p-3 fs-5 border" style="text-decoration: none;">Descarga Local</a>
-            </div>
+      <div class="container text-center">
+        <h1 class="fs-1 text-primary fw-bold mb-3">
+          Instalación y Configuración
+        </h1>
+        <p class="fs-4 text-info mx-auto mb-5">
+          Todo lo que necesitas para integrar Tokyo Night en tu flujo de trabajo
+          y empezar a construir interfaces modernas.
+        </p>
+        <div class="d-flex justify-center gap-3 flex-wrap mb-4">
+          <a
+            href="#cdn"
+            class="badge badge--primary p-3 fs-5"
+            style="text-decoration: none"
+            >Vía CDN</a
+          >
+          <a
+            href="#local"
+            class="badge badge--secondary p-3 fs-5 border"
+            style="text-decoration: none"
+            >Descarga Local</a
+          >
         </div>
+      </div>
     </header>
 
     <main class="container mt-7">
-        <!-- SECCIÓN 1: CDN -->
-        <section id="cdn" class="mb-7">
-            <h2 class="fs-2 text-primary fw-bold mb-4">Opción 1: Instalación vía CDN (Recomendado)</h2>
-            <p class="mb-4">La forma más rápida de empezar. Copia y pega este enlace en la sección <code>&lt;head&gt;</code> de tu proyecto para cargar los estilos desde nuestros servidores:</p>
-            <div class="bg-secondary p-5 rounded border shadow" style="border-left: 4px solid var(--success);">
-                <pre class="text-success overflow-x-auto"><code>&lt;link rel="stylesheet" href="https://natanael-ym23003.github.io/tokyo-sass-library/css/style.css"&gt;</code></pre>
-            </div>
-        </section>
+      <!-- SECCIÓN 1: CDN -->
+      <section id="cdn" class="mb-7">
+        <h2 class="fs-2 text-primary fw-bold mb-4">
+          Opción 1: Instalación vía CDN (Recomendado)
+        </h2>
+        <p class="mb-4">
+          La forma más rápida de empezar. Copia y pega este enlace en la sección
+          <code>&lt;head&gt;</code> de tu proyecto para cargar los estilos desde
+          nuestros servidores:
+        </p>
+        <div
+          class="bg-secondary p-5 rounded border shadow"
+          style="border-left: 4px solid var(--success)"
+        >
+          <pre
+            class="text-success overflow-x-auto"
+          ><code>&lt;link rel="stylesheet" href="https://natanael-ym23003.github.io/tokyo-sass-library/css/style.css"&gt;</code></pre>
+        </div>
+      </section>
 
-        <!-- SECCIÓN 2: LOCAL -->
-        <section id="local" class="mb-7">
-            <h2 class="fs-2 text-primary fw-bold mb-4">Opción 2: Instalación Local</h2>
-            <p class="mb-4">Si prefieres trabajar sin conexión o tener control total de los archivos, descarga la carpeta <code>css/</code> y enlázala localmente:</p>
-            <div class="bg-secondary p-5 rounded border shadow" style="border-left: 4px solid var(--primary);">
-                <pre class="text-primary overflow-x-auto"><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
-            </div>
-        </section>
+      <!-- SECCIÓN 2: LOCAL -->
+      <section id="local" class="mb-7">
+        <h2 class="fs-2 text-primary fw-bold mb-4">
+          Opción 2: Instalación Local
+        </h2>
+        <p class="mb-4">
+          Si prefieres trabajar sin conexión o tener control total de los
+          archivos, descarga la carpeta <code>css/</code> y enlázala localmente:
+        </p>
+        <div
+          class="bg-secondary p-5 rounded border shadow"
+          style="border-left: 4px solid var(--primary)"
+        >
+          <pre
+            class="text-primary overflow-x-auto"
+          ><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+        </div>
+      </section>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary fw-bold mb-4">Estructura del Proyecto SASS</h2>
-            <p class="mb-4">Nuestro framework sigue una arquitectura modular 7-1 para facilitar el mantenimiento:</p>
-            <div class="bg-secondary p-5 rounded border shadow">
-                <pre class="text-main">
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary fw-bold mb-4">
+          Estructura del Proyecto SASS
+        </h2>
+        <p class="mb-4">
+          Nuestro framework sigue una arquitectura modular 7-1 para facilitar el
+          mantenimiento:
+        </p>
+        <div class="bg-secondary p-5 rounded border shadow">
+          <pre class="text-main">
 <strong>scss/</strong>
 ├── <strong>abstracts/</strong>      <span class="text-info"># Variables y Mixins (Colores, Breakpoints)</span>
 ├── <strong>base/</strong>           <span class="text-info"># Reset y Tipografía base</span>
@@ -64,48 +103,63 @@
 ├── <strong>layout/</strong>         <span class="text-info"># Estructura (Navbar, Grid, Footer)</span>
 ├── <strong>utilities/</strong>      <span class="text-info"># Helpers de espaciado y colores</span>
 └── <strong>style.scss</strong>      <span class="text-info"># Punto de entrada principal</span></pre>
-            </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="mb-7">
-            <h2 class="fs-2 text-primary fw-bold mb-4">Paleta de Colores Oficial</h2>
-            <p class="mb-4">Colores definidos para mantener la consistencia estética Tokyo Night:</p>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100 shadow border">
-                        <div class="bg-primary p-6 rounded-top" style="background-color: #7aa2f7 !important;"></div>
-                        <div class="card__body p-4 text-center">
-                            <span class="badge badge--primary mb-2">Primary</span>
-                            <p class="fs-6 text-main">#7aa2f7</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100 border shadow">
-                        <div class="bg-secondary p-6 rounded-top" style="background-color: #1a1b26 !important;"></div>
-                        <div class="card__body p-4 text-center">
-                            <span class="badge badge--secondary mb-2 border">Secondary</span>
-                            <p class="fs-6 text-main">#1a1b26</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100 border shadow">
-                        <div class="bg-success p-6 rounded-top" style="background-color: #9ece6a !important;"></div>
-                        <div class="card__body p-4 text-center">
-                            <span class="badge badge--success mb-2">Success</span>
-                            <p class="fs-6 text-main">#9ece6a</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="mb-7">
+        <h2 class="fs-2 text-primary fw-bold mb-4">
+          Paleta de Colores Oficial
+        </h2>
+        <p class="mb-4">
+          Colores definidos para mantener la consistencia estética Tokyo Night:
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100 shadow border">
+              <div
+                class="bg-primary p-6 rounded-top"
+                style="background-color: #7aa2f7 !important"
+              ></div>
+              <div class="card__body p-4 text-center">
+                <span class="badge badge--primary mb-2">Primary</span>
+                <p class="fs-6 text-main">#7aa2f7</p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100 border shadow">
+              <div
+                class="bg-secondary p-6 rounded-top"
+                style="background-color: #1a1b26 !important"
+              ></div>
+              <div class="card__body p-4 text-center">
+                <span class="badge badge--secondary mb-2 border"
+                  >Secondary</span
+                >
+                <p class="fs-6 text-main">#1a1b26</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100 border shadow">
+              <div
+                class="bg-success p-6 rounded-top"
+                style="background-color: #9ece6a !important"
+              ></div>
+              <div class="card__body p-4 text-center">
+                <span class="badge badge--success mb-2">Success</span>
+                <p class="fs-6 text-main">#9ece6a</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-secondary text-center p-6 mt-7 border-0">
-        <p class="text-info fw-bold">
-            Tokyo Night Framework &copy; 2026 - Laboratorio II
-        </p>
+      <p class="text-info fw-bold">
+        Tokyo Night Framework &copy; 2026 - Laboratorio II
+      </p>
     </footer>
-</body>
+  </body>
 </html>

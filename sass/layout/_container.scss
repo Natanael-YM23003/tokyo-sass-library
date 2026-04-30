@@ -1,15 +1,15 @@
-@use '../abstracts/variables.scss' as *;
+@use "../abstracts/variables.scss" as *;
 
 .container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 15px;
-    box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .container-fluid {
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }

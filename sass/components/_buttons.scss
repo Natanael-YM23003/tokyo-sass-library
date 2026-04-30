@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use "../abstracts/variables" as *;
 
 .btn {
   display: inline-block;
@@ -52,7 +52,6 @@
   &--danger {
     background: $danger;
   }
-
 
   &--sm {
     padding: 6px 12px;
