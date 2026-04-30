@@ -34,30 +34,27 @@
     }
   }
 
-&__menu {
-  display: flex;
-  gap: 20px;
+  &__menu {
+    display: flex;
 
+    gap: 20px;
+
+
+    @media (max-width: 600px) {
+      width: 100%;
+      margin-top: 8px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 0 12px;
+      justify-content: center;
+    }
+  }
+&__menu a {
   @media (max-width: 600px) {
-    width: 100%;
-    margin-top: 8px;
-
-    display: grid;
-    grid-template-columns: 1fr; // lista vertical
-    gap: 12px;
-    padding: 0 16px; 
-    box-sizing: border-box;
+    padding: 8px;
   }
 }
-&__menu a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-
-  box-sizing: border-box;
-}
-
   a {
     color: white;
 
