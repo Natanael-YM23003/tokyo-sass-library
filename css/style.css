@@ -154,64 +154,60 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 16px 24px;
-  background: #1a1b26;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  background: rgba(26, 27, 38, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar {
+    flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
   }
 }
 .navbar__logo {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 800;
   color: white;
+  text-decoration: none;
 }
-@media (max-width: 400px) {
-  .navbar__logo {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
+.navbar__logo span {
+  color: #7dcfff;
+  text-shadow: 0 0 3px #7dcfff;
 }
 .navbar__menu {
   display: flex;
-  gap: 20px;
+  gap: 12px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar__menu {
     width: 100%;
-    margin-top: 8px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 0 12px;
     justify-content: center;
-  }
-}
-@media (max-width: 600px) {
-  .navbar__menu a {
-    padding: 8px;
+    flex-wrap: wrap;
   }
 }
 .navbar a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgba(47, 51, 77, 0.5);
+  border: 1px solid rgba(47, 51, 77, 0.8);
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar a {
+    flex: 1 1 auto;
     text-align: center;
-  }
-  .navbar a:last-child:nth-child(odd) {
-    grid-column: span 2;
+    min-width: 120px;
   }
 }
 .navbar a:hover {
+  background: rgba(125, 207, 255, 0.2);
+  border-color: #7dcfff;
   color: #7dcfff;
+  box-shadow: 0 0 15px #7dcfff;
+  transform: translateY(-2px);
 }
 
 /* Importar los archivos parciales quedando todo dentro de un namespace */
