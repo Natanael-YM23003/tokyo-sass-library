@@ -1,23 +1,29 @@
 @use '../abstracts/variables' as *;
 
-$colors: (
+// Mapa para colores de FONDO (Mantenemos tu bg-main oscuro)
+$bg-colors: (
   primary: $primary,
   secondary: $secondary,
+  main: $bg-main, // Esto hará que .bg-main sea NEGRO
   success: $success,
-  danger: $danger,
-  warning: $warning,
-  info: $info,
-  main: $bg-main
+  danger: $danger
 );
 
-@each $name, $color in $colors {
+// Mapa para colores de TEXTO (Usamos tu azul claro)
+$text-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  main: $text-main, // Esto hará que .text-main sea AZUL CLARO (#c0caf5)
+  success: $success,
+  danger: $danger
+);
 
-  .text-#{$name} {
-    color: $color;
-  }
+// Generamos las clases de fondo
+@each $name, $color in $bg-colors {
+  .bg-#{$name} { background-color: $color !important; }
+}
 
-  .bg-#{$name} {
-    background-color: $color;
-  }
-
+// Generamos las clases de texto
+@each $name, $color in $text-colors {
+  .text-#{$name} { color: $color !important; }
 }

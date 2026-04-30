@@ -9,11 +9,29 @@ $font-sizes: (
   6: 1rem                           // Tamaño base
 );
 
+.overflow-x-auto {
+    overflow-x: auto !important; // Forzamos que si el contenido sobra, salga la barra
+    white-space: pre;           // Mantiene el formato de código sin romper líneas
+    max-width: 100%;            // No deja que el contenedor crezca más que el padre
+    
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $secondary;
+    }
+}
+
 @each $key, $size in $font-sizes {
   .fs-#{$key} {
     font-size: $size;
   }
 }
+
 
 .fw-light { font-weight: 300; }
 .fw-normal { font-weight: 400; }

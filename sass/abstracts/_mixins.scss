@@ -20,7 +20,7 @@
 
 /* Mixin para generar clases de espaciado */
 @mixin spacing($property, $prefix) {
-  @for $i from 1 through 7 {
+  @for $i from 1 through 10 {
     .#{$prefix}-#{$i} {
       #{$property}: $i * 5px;
     }

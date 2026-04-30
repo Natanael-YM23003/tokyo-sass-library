@@ -18,6 +18,9 @@ $gaps: (
 .d-inline-flex {
   display: inline-flex;
 }
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
 
 /* Justify content */
 .justify-start {
