@@ -22,8 +22,8 @@ Puedes visualizar el framework en funcionamiento aquí:
 - 🔗 **Sitio principal (GitHub Pages):**  
   https://natanael-ym23003.github.io/tokyo-sass-library/
 
-- 📄 **Documentación:**  
-  https://natanael-ym23003.github.io/tokyo-sass-library/docs/index.html
+- 📄 **Repositorio de GitHub**  
+  https://github.com/Natanael-YM23003/tokyo-sass-library
 
 ### 🚀 Guía Rápida de Instalación
 
